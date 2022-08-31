@@ -229,6 +229,10 @@ a {
   margin-left: 100px;
 }
 
+.accordion-button {
+  position: inherit;
+}
+
 .avatar {
   width: 200px;
   height: 200px;
