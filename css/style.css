@@ -96,7 +96,7 @@ a {
 }
 
 .navbar-nav {
-  max-width: 716px;
+  max-width: 900px;
   margin: auto;
   background-color: white;
   border-radius: 10px;
@@ -236,13 +236,86 @@ a {
 .avatar {
   width: 200px;
   height: 200px;
+  margin: 20px auto;
   border-radius: 50%;
-  margin-bottom: 50px;
+}
+
+.avatar-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-qualification {
+  padding-top: 20px;
 }
 
 .saude {
-  width: 200px;
-  height: 200px;
+  width: 90%;
+  height: 90%;
   border-radius: 50%;
+}
+
+.carousel-inner {
   margin: auto;
+  max-width: 85%;
+  position: relative;
+}
+
+.carousel-item {
+  justify-content: center;
+  align-items: center;
+}
+
+.col-md-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+@media (max-width: 767px) {
+  /* .col-md-3 {
+    width: 33.33333333%;
+  } */
+
+  .saude {
+    width: 200px;
+    height: 200px;
+  }
+
+
+
+  .carousel-inner .carousel-item > div {
+      display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+      display: block;
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+  
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+  }
+  
+  .carousel-inner .carousel-item-start.active, 
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+  }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+transform: translateX(0);
 }
