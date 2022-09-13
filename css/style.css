@@ -1,5 +1,8 @@
 /* Elements */
 
+h2 {
+  text-align: -webkit-center;
+}
 
 p {
   text-align: left;
@@ -21,9 +24,10 @@ iframe {
 
 /* Header */
 
-.container-fluid {
-  padding-left: 0px;
-  padding-right: 0px;
+#navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 .header-div {
@@ -151,9 +155,9 @@ iframe {
   #navbar-brand {
     display:contents;
   }
-  .wellcome-image {
+  /* .wellcome-image {
     padding-top: 59px;
-  }
+  } */
 }
 
 @media (min-width: 940px) {
@@ -208,35 +212,44 @@ iframe {
 /* Content */
 
 
+.content-div {
+  margin: auto;
+  max-width: 1100px;
+}
+
+/* @media (max-width: 1099px) {
+  .content-div {
+    width: 100%;
+  }
+} */
 
 .content-div {
   margin: auto;
   max-width: 1100px;
-  height: 1000px;
 }
 
 .wellcome-image {
-  max-width: 1100px;
-  position:static;
-}
-
-.wellcome-image-position {
-  padding-top: 59px;
+  /* max-width: 1100px;
+  position:static; */
+  max-width: 100%;
+  height: auto;
 }
 
 .contant-container {
   margin-top: 50px;
 }
 
+
 .auimg {
-  width: 350px;
-  height: 200px;
+  float: left;
+  max-width: 350px;
+  height: auto;
   border-radius: 10px;
 }
 
 #img2 {
   margin-top: 20px;
-  margin-left: 100px;
+  float: right;
 }
 
 .accordion-button {
@@ -295,14 +308,24 @@ iframe {
     height: 200px;
   }
 
-
-
   .carousel-inner .carousel-item > div {
       display: none;
   }
   .carousel-inner .carousel-item > div:first-child {
       display: block;
   }
+
+  .auimg {
+    margin-top: 25%;
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  #img2 {
+    margin-top: 25%;
+  }
+  
 }
 
 .carousel-inner .carousel-item.active,
@@ -357,6 +380,10 @@ transform: translateX(0);
   font-size: 60px;
   display: table;
   /* margin: auto; */
+}
+
+.contact-icon-large:hover {
+  color: #0d2e13;
 }
 
 .contact-text {

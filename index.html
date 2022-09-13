@@ -29,7 +29,7 @@
 </head>
 
 <body>
-  <div class="container-fluid">
+  <!-- <div class="container-fluid"> -->
     <div class="header-div row">
       <div class="col">
         <a class="navbar-brand" href="#">
@@ -90,13 +90,13 @@
         </div>
       </div>
     </nav>
-  </div>
+  <!-- </div> -->
 
   <div class="content-div">
     <div>
-      <img id="main-img" class="wellcome-image" src="/images/medical-assistant-helping-patient-with-physiotherapy-exercises (2).jpg" alt="">
+      <img id="main-img" class="wellcome-image" src="images/medical-assistant-helping-patient-with-physiotherapy-exercises (2).jpg" alt="">
     </div>
-    <div class="container text-center contant-container" id="about-us">
+    <div class="text-center contant-container" id="about-us">
       <br><br><br>
       <div class="row align-items-start">
         <div class="col">
@@ -203,8 +203,8 @@
           <img class="avatar" src="/images/avatares/avatar.jpg" alt="">
         </div>
         <div class="col-6 team-qualification">
-          <h2>Dr. Augusto</h2>
-          <h3>CREFITO - #### -F</h3>
+          <h3>Dr. Augusto</h3>
+          <h4>CREFITO - #### -F</h4>
           <p>Fisioterapeuta com especialização em acupuntura e pilates. Pós graduada em fisioterapia cardiopulmonar. </p>
         </div>
       </div>
@@ -214,8 +214,8 @@
           <img class="avatar" src="/images/avatares/avatar.jpg" alt="">
         </div>
         <div class="col-6 team-qualification">
-          <h2>Dr. Leonardo</h2>
-          <h3>CREFITO - ###### -F</h3>
+          <h3>Dr. Leonardo</h3>
+          <h4>CREFITO - ###### -F</h4>
           <p>Fisioterapeuta com especialização em acupuntura e pilates. Pós graduada em fisioterapia cardiopulmonar. </p>
         </div>
       </div>
@@ -225,7 +225,7 @@
           <img class="avatar" src="/images/avatares/ursula.png" alt="">
         </div>
         <div class="col-6 team-qualification">
-          <h2>Úrsula</h2>
+          <h3>Úrsula</h3>
           <p>Especialista em extrair os melhores sorrisos dos nossos clientes. Além de fazer o melhor café da região. </p>
         </div>
       </div>
@@ -236,7 +236,7 @@
       <br><br>
 
       <div class="row mx-auto my-auto justify-content-center">
-        <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div id="recipeCarousel" class="carousel slide"  >
           <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
                 <div class="col-md-3">
@@ -358,7 +358,7 @@
         </div>
 
         <div class="col-6">
-          <h2>Fisio Mais</h2>
+          <h3>Fisio Mais</h3>
 
           <div class="contact-div">
             <a class="row" href="mailto:fisiomaissaudedf@gmail.com">
@@ -425,7 +425,6 @@
 
 
   </div>
-
   
 
 
@@ -440,10 +439,10 @@
     function myFunction() {
       if (document.body.scrollTop > 101 || document.documentElement.scrollTop > 101) {
         document.getElementById("navbar").className = "navbar navbar-expand-lg fixed-navbar";
-        document.getElementById("main-img").className = "wellcome-image wellcome-image-position";
+        // document.getElementById("main-img").className = "wellcome-image wellcome-image-position";
       } else {
         document.getElementById("navbar").className = "navbar navbar-expand-lg";
-        document.getElementById("main-img").className = "wellcome-image";
+        // document.getElementById("main-img").className = "wellcome-image";
       }
     }
   </script>
@@ -473,4 +472,7 @@
   </script>
 
 </body>
+
+
+
 </html>
