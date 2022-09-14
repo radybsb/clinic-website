@@ -1,7 +1,8 @@
 /* Elements */
 
 h2 {
-  text-align: -webkit-center;
+  /* text-align: -webkit-center; */
+  font-weight: 600;
 }
 
 p {
@@ -22,6 +23,10 @@ iframe {
   height: 100%;
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 /* Header */
 
 #navbar {
@@ -32,6 +37,17 @@ iframe {
 
 .header-div {
   background-color: #0d2e13;
+  max-width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+#logo-col {
+  padding: 0px;
+}
+
+.header-info-contact{
+  padding: 0px;
 }
 
 .logo-header {
@@ -110,7 +126,7 @@ iframe {
 }
 
 .navbar-nav {
-  max-width: 900px;
+  width: 933px;
   margin: auto;
   background-color: white;
   border-radius: 10px;
@@ -126,6 +142,10 @@ iframe {
   display: none ;
   align-self: center;
   margin: auto;
+}
+
+.container-fluid {
+  padding: 0px;
 }
 
 /* .navbar-toggler-icon {
@@ -236,19 +256,31 @@ iframe {
 }
 
 .contant-container {
-  margin-top: 50px;
+  margin: 50px 10px 0px;
 }
 
 
 .auimg {
   float: left;
-  max-width: 350px;
+  max-width: 300px;
   height: auto;
   border-radius: 10px;
+  margin-top: 30px;
+}
+
+@media (max-width: 960px) {
+  .auimg {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 840px) {
+  .auimg {
+    margin-top: 90px;
+  }
 }
 
 #img2 {
-  margin-top: 20px;
   float: right;
 }
 
@@ -372,6 +404,7 @@ transform: translateX(0);
 
 .contact-icon {
   padding-top: 11px;
+  margin-right: 8px;
   font-size: 30px;
   color: #6dc28b;
 }
@@ -396,4 +429,47 @@ transform: translateX(0);
 
 .social-media-icon {
   margin: auto;
+}
+
+.footer {
+  margin-top: 90px;
+  height: 100px;
+  background-color: #0d2e13;
+  text-align: center;
+  position: relative;
+}
+
+.bottom-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.up-arrow {
+  color: rgba(255, 255, 255, 0.801);
+  font-size: 28px;
+  position: absolute;
+  right: 2%;
+  top: 20%;
+}
+
+.up-arrow:hover {
+  color: #6dc28b;
+}
+
+.footer-2 {
+  height: 30px;
+  background-color: #0a2610;
+  color: white;
+  position: relative;
+  text-align: right;
+}
+
+.fi-brands-github {
+  
+  color: white;
+  margin-left: 10px;
+  margin-right: 19px;
+  font-size: 20px;
 }
